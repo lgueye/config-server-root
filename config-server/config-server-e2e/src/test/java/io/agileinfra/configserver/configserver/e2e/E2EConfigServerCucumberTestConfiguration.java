@@ -1,0 +1,21 @@
+package io.agileinfra.configserver.configserver.e2e;
+
+import io.agileinfra.dsched.clock.api.ClockApiConfiguration;
+import io.agileinfra.dsched.notification.api.NotificationApiConfiguration;
+import io.agileinfra.dsched.scheduler.consumer.client.SchedulerConsumerClientConfiguration;
+import io.agileinfra.dsched.scheduler.producer.client.SchedulerProducerClientConfiguration;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
+
+@Slf4j
+@Configuration
+@Import(
+  {
+    SchedulerProducerClientConfiguration.class,
+    SchedulerConsumerClientConfiguration.class,
+    ClockApiConfiguration.class,
+    NotificationApiConfiguration.class,
+  }
+)
+public class E2EConfigServerCucumberTestConfiguration {}
