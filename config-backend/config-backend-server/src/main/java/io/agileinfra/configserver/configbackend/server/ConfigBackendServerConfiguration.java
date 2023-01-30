@@ -1,4 +1,6 @@
 package io.agileinfra.configserver.configbackend.server;
 
-public class ConfigBackendServerConfiguration {
-}
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class ConfigBackendServerConfiguration {}

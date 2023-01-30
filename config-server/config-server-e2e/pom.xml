@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>io.agileinfra</groupId>
+        <groupId>io.agileinfra.configserver</groupId>
         <artifactId>config-server</artifactId>
         <version>0.1.0</version>
     </parent>
@@ -12,6 +12,34 @@
         <exec-maven-plugin.version>3.0.0</exec-maven-plugin.version>
     </properties>
     <dependencies>
+        <dependency>
+            <groupId>io.agileinfra.configserver</groupId>
+            <artifactId>config-backend-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.agileinfra.configserver</groupId>
+            <artifactId>config-server-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.agileinfra.configserver</groupId>
+            <artifactId>config-server-consumer-client</artifactId>
+        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>io.agileinfra.configserver</groupId>-->
+        <!--            <artifactId>service-a-client</artifactId>-->
+        <!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>io.agileinfra.configserver</groupId>-->
+        <!--            <artifactId>service-b-client</artifactId>-->
+        <!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>io.agileinfra.configserver</groupId>-->
+        <!--            <artifactId>service-c-client</artifactId>-->
+        <!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>io.agileinfra.configserver</groupId>-->
+        <!--            <artifactId>service-d-client</artifactId>-->
+        <!--        </dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-test</artifactId>
@@ -44,6 +72,35 @@
             <groupId>org.awaitility</groupId>
             <artifactId>awaitility</artifactId>
             <version>${awaitility.version}</version>
+        </dependency>
+        <!--
+        Servers are not needed for the e2e per se (only clients are).
+        It's just a trick to make sure they are built BEFORE the e2e module so that the docker images are up-to-date
+        -->
+        <dependency>
+            <groupId>io.agileinfra.configserver</groupId>
+            <artifactId>config-backend-server</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.agileinfra.configserver</groupId>
+            <artifactId>service-a-server</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.agileinfra.configserver</groupId>
+            <artifactId>service-b-server</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.agileinfra.configserver</groupId>
+            <artifactId>service-c-server</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.agileinfra.configserver</groupId>
+            <artifactId>service-d-server</artifactId>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
     <build>

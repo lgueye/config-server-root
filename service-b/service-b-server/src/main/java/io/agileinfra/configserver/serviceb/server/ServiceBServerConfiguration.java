@@ -1,4 +1,6 @@
 package io.agileinfra.configserver.serviceb.server;
 
-public class ServiceBServerConfiguration {
-}
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class ServiceBServerConfiguration {}

@@ -1,4 +1,6 @@
 package io.agileinfra.configserver.servicec.server;
 
-public class ServiceCServerConfiguration {
-}
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class ServiceCServerConfiguration {}
