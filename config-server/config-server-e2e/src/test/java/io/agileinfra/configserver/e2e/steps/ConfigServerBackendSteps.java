@@ -5,13 +5,12 @@ import io.agileinfra.configserver.e2e.E2EConfigServerCucumberTestConfiguration;
 import io.cucumber.java.DataTableType;
 import io.cucumber.java.en.Given;
 import io.cucumber.spring.CucumberContextConfiguration;
+import java.util.List;
+import java.util.Map;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.TestPropertySource;
-
-import java.util.List;
-import java.util.Map;
 
 @CucumberContextConfiguration
 @ContextConfiguration(classes = { E2EConfigServerCucumberTestConfiguration.class })

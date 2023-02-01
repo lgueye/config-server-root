@@ -24,22 +24,6 @@
             <groupId>io.agileinfra.configserver</groupId>
             <artifactId>config-server-consumer-client</artifactId>
         </dependency>
-        <!--        <dependency>-->
-        <!--            <groupId>io.agileinfra.configserver</groupId>-->
-        <!--            <artifactId>service-a-client</artifactId>-->
-        <!--        </dependency>-->
-        <!--        <dependency>-->
-        <!--            <groupId>io.agileinfra.configserver</groupId>-->
-        <!--            <artifactId>service-b-client</artifactId>-->
-        <!--        </dependency>-->
-        <!--        <dependency>-->
-        <!--            <groupId>io.agileinfra.configserver</groupId>-->
-        <!--            <artifactId>service-c-client</artifactId>-->
-        <!--        </dependency>-->
-        <!--        <dependency>-->
-        <!--            <groupId>io.agileinfra.configserver</groupId>-->
-        <!--            <artifactId>service-d-client</artifactId>-->
-        <!--        </dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-test</artifactId>
