@@ -6,15 +6,5 @@
         <artifactId>config-backend</artifactId>
         <version>0.1.0</version>
     </parent>
-    <artifactId>config-backend-client</artifactId>
-    <dependencies>
-        <dependency>
-            <groupId>io.agileinfra.configserver</groupId>
-            <artifactId>rest-configuration</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.agileinfra.configserver</groupId>
-            <artifactId>config-backend-model</artifactId>
-        </dependency>
-    </dependencies>
+    <artifactId>config-backend-model</artifactId>
 </project>

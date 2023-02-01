@@ -78,6 +78,11 @@
             </dependency>
             <dependency>
                 <groupId>io.agileinfra.configserver</groupId>
+                <artifactId>config-backend-model</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.agileinfra.configserver</groupId>
                 <artifactId>config-backend-server</artifactId>
                 <version>${project.version}</version>
             </dependency>
@@ -184,8 +189,14 @@
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-redis</artifactId>
+                <artifactId>spring-boot-starter-data-redis</artifactId>
                 <version>${spring-boot.version}</version>
+            </dependency>
+            <!-- Required because of breaking changes. See https://stackoverflow.com/a/73796075 -->
+            <dependency>
+                <groupId>redis.clients</groupId>
+                <artifactId>jedis</artifactId>
+                <version>3.9.0</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.commons</groupId>

@@ -1,4 +1,4 @@
-package io.agileinfra.configserver.e2e.steps;
+package io.agileinfra.configserver.configbackend.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

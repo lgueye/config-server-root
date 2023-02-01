@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>config-backend-client</module>
+        <module>config-backend-model</module>
         <module>config-backend-server</module>
     </modules>
     <dependencies></dependencies>
